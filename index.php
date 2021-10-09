@@ -21,7 +21,7 @@
         <!--/Đồng hồ-->
 
         <!--Tìm kiếm phổ biến-->
-        <div class="uk-card uk-card-default home__content__card">
+        <div class="uk-card uk-card-default home__content__card home__content__card--search">
             <div class="uk-card-header uk-padding-small">
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-expand">
@@ -35,28 +35,85 @@
             <div class="uk-card-body uk-padding-remove">
                 <div uk-slider>
 
-                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                    <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
 
                         <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-collapse uk-grid-match" uk-grid>
-                            
+                            <?php
+                            $data = array(
+                                array(
+                                    'src' => 'https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/feature_search_image_1.jpg?1629431129709',
+                                    'title' => 'Đồng hồ chính hãng',
+                                ),
+                                array(
+                                    'src' => 'https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/feature_search_image_2.jpg?1629431129709',
+                                    'title' => 'Giày Sneaker',
+                                ),
+
+                                array(
+                                    'src' => 'https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/feature_search_image_3.jpg?1629431129709',
+                                    'title' => 'Nước hoa cao cấp',
+                                ),
+                                array(
+                                    'src' => 'https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/feature_search_image_4.jpg?1629431129709',
+                                    'title' => 'Golf',
+                                ),
+
+                                array(
+                                    'src' => 'https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/feature_search_image_1.jpg?1629431129709',
+                                    'title' => 'Đồng hồ chính hãng',
+                                ),
+                                array(
+                                    'src' => 'https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/feature_search_image_2.jpg?1629431129709',
+                                    'title' => 'Giày Sneaker',
+                                ),
+
+                                array(
+                                    'src' => 'https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/feature_search_image_3.jpg?1629431129709',
+                                    'title' => 'Nước hoa cao cấp',
+                                ),
+                                array(
+                                    'src' => 'https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/feature_search_image_4.jpg?1629431129709',
+                                    'title' => 'Golf',
+                                ),
+
+                                array(
+                                    'src' => 'https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/feature_search_image_1.jpg?1629431129709',
+                                    'title' => 'Đồng hồ chính hãng',
+                                ),
+                                array(
+                                    'src' => 'https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/feature_search_image_2.jpg?1629431129709',
+                                    'title' => 'Giày Sneaker',
+                                ),
+
+                                array(
+                                    'src' => 'https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/feature_search_image_3.jpg?1629431129709',
+                                    'title' => 'Nước hoa cao cấp',
+                                ),
+                                array(
+                                    'src' => 'https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/feature_search_image_4.jpg?1629431129709',
+                                    'title' => 'Golf',
+                                ),
+                            );
+                            foreach ($data as $k=>$v): ?>
+                            <?php if ($k%2==0): ?>
                             <li>
-                                <div class="uk-child-width-1-1 uk-grid-collapse uk-grid-match" uk-grid>
-                                    <div>
-
+                                <div class="uk-child-width-1-1 uk-grid-collapse uk-grid-match uk-flex-column" uk-grid>
+                                    <div class="uk-flex-1">
+                                        <?php require "template-parts/components/searchItem.php"; ?>
                                     </div>
-                                    <div>
-
+                                    <?php else: ?>
+                                    <div class="uk-flex-1">
+                                        <?php require "template-parts/components/searchItem.php"; ?>
                                     </div>
                                 </div>
                             </li>
+                            <?php endif; ?>
+                            <?php endforeach; ?>
                         </ul>
-
-                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
                     </div>
 
-                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                    <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-grid-5"></ul>
 
                 </div>
             </div>
