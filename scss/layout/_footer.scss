@@ -31,6 +31,19 @@
   }
   &__center{
     padding-top: 15px;
+    .uk-accordion{
+      .uk-accordion-title{
+        @extend .footer__center__title;
+        margin: 0 !important;
+        &:before{
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .uk-accordion-content{
+        margin-top: 10px;
+      }
+    }
     &__margin20{
       margin: 0 !important;
       &:nth-child(n+2){
