@@ -27,6 +27,10 @@
       @extend .fz-14;
       background-color: #2196f3;
       color: #fff;
+      &:hover{
+        background-color: #0c7cd5;
+        color: #ffffff;
+      }
     }
   }
   &__center{

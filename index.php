@@ -23,7 +23,66 @@
 </div>
 <div class="home__catalog uk-section-xsmall">
     <div class="uk-container uk-padding-remove">
-
+        <div class="uk-child-width-expand@m uk-grid-collapse uk-grid-match uk-flex-nowrap uk-overflow-auto" uk-grid>
+            <?php
+            $data = array(
+                array(
+                    'src' => 'images/smartphone-call.png',
+                    'txt' => 'Đồ điện tử và công nghệ',
+                ),
+                array(
+                    'src' => 'images/watch.png',
+                    'txt' => 'Đồng hồ hàng hiệu',
+                ),
+                array(
+                    'src' => 'images/dress.png',
+                    'txt' => 'Thời trang nữ',
+                ),
+                array(
+                    'src' => 'images/cotton-polo-shirt.png',
+                    'txt' => 'Thời trang nam',
+                ),
+                array(
+                    'src' => 'images/car.png',
+                    'txt' => 'Mẹ, Bé và Đồ chơi',
+                ),
+                array(
+                    'src' => 'images/cream.png',
+                    'txt' => 'Làm đẹp',
+                ),
+                array(
+                    'src' => 'images/perfume.png',
+                    'txt' => 'Thế giới nước hoa',
+                ),
+                array(
+                    'src' => 'images/console.png',
+                    'txt' => 'Đồ chơi và Games',
+                ),
+                array(
+                    'src' => 'images/hubcap.png',
+                    'txt' => 'Phụ tùng, phụ kiện xe hơi',
+                ),
+                array(
+                    'src' => 'images/camp.png',
+                    'txt' => 'Thể thao, du lịch và dã ngoại',
+                ),
+            );
+            foreach ($data as $k=>$v): ?>
+            <div>
+                <a href="" class="home__catalog__item uk-link-toggle">
+                    <div>
+                        <div class="uk-cover-container uk-border-circle uk-display-inline-block home__catalog__item__img">
+                            <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                <img src="<?= $v['src'] ?>" alt="">
+                            </div>
+                            <canvas width="56" height="56"></canvas>
+                        </div>
+                    </div>
+                    <div class="home__catalog__item__title"><?= $v['txt'] ?></div>
+                </a>
+            </div>
+            <?php endforeach; ?>
+        </div>
     </div>
 </div>
 <?php
