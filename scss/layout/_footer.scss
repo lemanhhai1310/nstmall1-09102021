@@ -1,6 +1,6 @@
 .footer{
   &__top{
-    padding: 15px 0;
+    padding: 20px 0;
     border-bottom: 1px solid #eaedf1;
     &__title{
       color: #303846;
@@ -31,6 +31,10 @@
   }
   &__center{
     padding-top: 15px;
+    padding-bottom: 20px;
+    @include media-breakpoint-up('m'){
+      padding-bottom: 40px;
+    }
     .uk-accordion{
       .uk-accordion-title{
         @extend .footer__center__title;

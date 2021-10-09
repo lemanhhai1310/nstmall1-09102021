@@ -1,5 +1,85 @@
 .home{
   &__content{
     background-color: #f3f5f7;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    &__card{
+      &--news{
+        &__item{
+          &__margin10s{
+            >*{
+              margin: 0 !important;
+              &:nth-child(n+2){
+                margin-top: 10px !important;
+              }
+            }
+          }
+          &__title{
+            color: #1c1c1c;
+            @extend .fz-14;
+            line-height: 1.4;
+            font-family: $font-Roboto-Medium;
+            @extend .line-clamp-2;
+            a{
+              color: #1c1c1c;
+            }
+          }
+          &__desc{
+            color: #777;
+            line-height: 1.5;
+            word-break: break-word;
+            @extend .fz-14;
+            @extend .line-clamp-3;
+          }
+          &__readMore{
+            color: #2196f3;
+            border-color: #2196f3;
+            @extend .fz-13;
+            text-transform: initial;
+            &:hover{
+              background-color: #2196f3;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      &:nth-child(n+2){
+        margin-top: 15px;
+        @include media-breakpoint-up('m'){
+          margin-top: 15px;
+        }
+      }
+      @include media-breakpoint-up('m'){
+        border-radius: 6px;
+      }
+      box-shadow: 4px 4px 16px 0 rgb(217 228 231 / 50%);
+      .uk-card-header{
+        $x:12px;
+        padding-top: #{$x};
+        padding-bottom: #{$x};
+      }
+      .uk-card-body{
+
+      }
+      &__title{
+        @extend .fz-20;
+        font-family: $font-Roboto-Medium;
+        color: #303846;
+        a{
+          color: #303846;
+          &:hover{
+            color: #2196f3 !important;
+          }
+        }
+      }
+      &__linkAll{
+        color: #505f77;
+        @extend .fz-14;
+        font-family: $font-Roboto-Medium;
+        &:hover{
+          color: #2196f3 !important;
+        }
+      }
+    }
   }
 }
