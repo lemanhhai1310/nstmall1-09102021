@@ -283,7 +283,10 @@
           }
           &__thumbnail{
             position: relative;
-            height: 292px;
+            height: 233px;
+            @include media-breakpoint-up('m'){
+              height: 292px;
+            }
             display: flex;
             align-items: center;
             justify-content: center;
