@@ -53,11 +53,11 @@
                 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
                     <div class="uk-navbar-left">
-                        <a href="" class="uk-navbar-item uk-logo"><img src="images/logo.png" alt=""></a>
+                        <a href="" class="uk-navbar-item uk-logo" uk-toggle="cls: uk-padding-remove-left; mode: media; media: @l"><img src="images/logo.png" alt=""></a>
                     </div>
 
                     <div class="uk-navbar-right uk-flex-1">
-                        <div class="uk-navbar-item uk-flex-1">
+                        <div class="uk-navbar-item uk-flex-1 uk-visible@m">
                             <form class="header__center__form uk-position-relative uk-width-1-1">
                                 <input id="search" class="uk-input header__center__form__inputSearch uk-border-pill" type="text" placeholder="">
                                 <button type="button" class="header__center__form__btn uk-button uk-button-default uk-position-center-right">
@@ -72,7 +72,7 @@
                                 </button>
                             </form>
                         </div>
-                        <div class="uk-navbar-item">
+                        <div class="uk-navbar-item uk-visible@m">
                             <a href="" class="header__center__nav1 header__center__nav1--account">Tài khoản</a>
                             <div class="header__center__dropdown header__center__dropdown--acc" uk-dropdown>
                                 <ul class="uk-nav">
@@ -81,7 +81,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="uk-navbar-item">
+                        <div class="uk-navbar-item uk-visible@m">
                             <a href="" class="header__center__nav1 header__center__nav1--wishList" data-count="0">Yêu thích</a>
                             <div class="header__center__dropdown header__center__dropdown--wishList" uk-dropdown>
                                 <div class="header__center__dropdown--wishList__message">Những sản phẩm yêu thích (0)</div>
@@ -96,7 +96,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="uk-navbar-item">
+                        <div class="uk-navbar-item uk-visible@m" uk-toggle="cls: uk-padding-remove-right; mode: media; media: @l">
                             <a href="" class="header__center__cart" data-count="0">
                                 <svg viewBox="0 0 100 100" data-radium="true" style="width: 25px;"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-286.000000, -515.000000)" fill="#fff"><path d="M374.302082,541.184324 C374.044039,539.461671 372.581799,538.255814 370.861517,538.255814 L351.078273,538.255814 L351.078273,530.159345 C351.078273,521.804479 344.283158,515 335.93979,515 C327.596422,515 320.801307,521.804479 320.801307,530.159345 L320.801307,538.255814 L301.018063,538.255814 C299.297781,538.255814 297.835541,539.461671 297.577499,541.184324 L286.051608,610.951766 C285.87958,611.985357 286.137623,613.018949 286.825735,613.794143 C287.513848,614.569337 288.460003,615 289.492173,615 L382.387408,615 L382.473422,615 C384.451746,615 386,613.449612 386,611.468562 C386,611.037898 385.913986,610.693368 385.827972,610.348837 L374.302082,541.184324 L374.302082,541.184324 Z M327.854464,530.159345 C327.854464,525.680448 331.467057,522.062877 335.93979,522.062877 C340.412524,522.062877 344.025116,525.680448 344.025116,530.159345 L344.025116,538.255814 L327.854464,538.255814 L327.854464,530.159345 L327.854464,530.159345 Z M293.62085,608.023256 L304.028557,545.318691 L320.801307,545.318691 L320.801307,565.043066 C320.801307,567.024117 322.349561,568.574505 324.327886,568.574505 C326.30621,568.574505 327.854464,567.024117 327.854464,565.043066 L327.854464,545.318691 L344.025116,545.318691 L344.025116,565.043066 C344.025116,567.024117 345.57337,568.574505 347.551694,568.574505 C349.530019,568.574505 351.078273,567.024117 351.078273,565.043066 L351.078273,545.318691 L367.851024,545.318691 L378.25873,608.023256 L293.62085,608.023256 L293.62085,608.023256 Z"></path></g></g></svg>
                             </a>
@@ -125,28 +125,143 @@
                             <li><a href="#">GIỚI THIỆU</a></li>
                             <li>
                                 <a href="#">SẢN PHẨM</a>
-                                <div class="uk-navbar-dropdown" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;">
-                                    <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
-                                        <div>
-                                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                <li class="uk-active"><a href="#">Active</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-header">Header</li>
-                                                <li><a href="#">Item</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-divider"></li>
-                                                <li><a href="#">Item</a></li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <ul class="uk-nav uk-navbar-dropdown-nav">
-                                                <li class="uk-active"><a href="#">Active</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-header">Header</li>
-                                                <li><a href="#">Item</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-divider"></li>
-                                                <li><a href="#">Item</a></li>
+                                <div class="uk-navbar-dropdown header__bottom__megaDropdown" uk-drop="boundary: !nav; boundary-align: true; pos: bottom-justify;animation: uk-animation-slide-bottom-small; duration: 300">
+                                    <div class="uk-grid-collapse uk-grid-match" uk-grid>
+                                        <div class="uk-width-1-4">
+                                            <ul class="uk-nav col_menu_cap1 uk-position-relative">
+                                                <?php
+                                                $dataMenu = array(
+                                                    array(
+                                                        'txt' => 'Đồ điện tử và công nghệ',
+                                                        'sub' => true,
+                                                    ),
+                                                    array(
+                                                        'txt' => 'Đồng hồ hàng hiệu',
+                                                        'sub' => true,
+                                                    ),
+                                                    array(
+                                                        'txt' => 'Thời trang nữ',
+                                                        'sub' => true,
+                                                    ),
+                                                    array(
+                                                        'txt' => 'Thời trang nam',
+                                                        'sub' => true,
+                                                    ),
+                                                    array(
+                                                        'txt' => 'Mẹ, Bé và Đồ chơi',
+                                                        'sub' => true,
+                                                    ),
+
+                                                    array(
+                                                        'txt' => 'Làm đẹp',
+                                                        'sub' => true,
+                                                    ),
+                                                    array(
+                                                        'txt' => 'Thế giới nước hoa',
+                                                        'sub' => true,
+                                                    ),
+                                                    array(
+                                                        'txt' => 'Đồ chơi và Games',
+                                                        'sub' => true,
+                                                    ),
+                                                    array(
+                                                        'txt' => 'Phụ tùng, phụ kiện xe hơi',
+                                                        'sub' => true,
+                                                    ),
+                                                    array(
+                                                        'txt' => 'Thể thao, du lịch và dã ngoại',
+                                                        'sub' => true,
+                                                    ),
+                                                );
+                                                foreach ($dataMenu as $k=>$v): ?>
+                                                <li class="sub_item_menu header__bottom__megaDropdown__sub_item_menu <?= ($k==0)?'active':'' ?>">
+                                                    <a href=""><span><?= $v['txt'] ?></span></a>
+                                                    <?php if ($v['sub']): ?>
+                                                    <div class="conten_hover_submenu header__bottom__megaDropdown__conten_hover_submenu">
+                                                        <div class="uk-grid-small" uk-grid>
+                                                            <div class="uk-width-expand">
+                                                                <div class="uk-child-width-1-3@m uk-grid-20 grid1" uk-grid>
+                                                                    <div>
+                                                                        <h3 class="header__bottom__megaDropdown__conten_hover_submenu__title"><a href="">Máy tính và phụ kiện</a></h3>
+                                                                        <ul class="uk-nav">
+                                                                            <li><a href="">Laptop, Tablet</a></li>
+                                                                            <li><a href="">Màn hình</a></li>
+                                                                            <li><a href="">Webcams</a></li>
+                                                                            <li><a href="">Phụ Kiện, Linh kiện</a></li>
+                                                                            <li><a href="">Thiết bị mạng</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h3 class="header__bottom__megaDropdown__conten_hover_submenu__title"><a href="">Điện thoại và phụ kiện</a></h3>
+                                                                        <ul class="uk-nav">
+                                                                            <li><a href="">Điện thoại</a></li>
+                                                                            <li><a href="">Pin sạc dự phòng, Cáp và Bộ sạc</a></li>
+                                                                            <li><a href="">Bao da, Ốp lưng và Dán màn hình</a></li>
+                                                                            <li><a href="">Gậy chụp hình</a></li>
+                                                                            <li><a href="">Linh kiện điện thoại</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h3 class="header__bottom__megaDropdown__conten_hover_submenu__title"><a href="">Thiết bị kỹ thuật số</a></h3>
+                                                                        <ul class="uk-nav">
+                                                                            <li><a href="">Máy ảnh, Quay phim và Camera hành trình</a></li>
+                                                                            <li><a href="">Loa thông minh</a></li>
+                                                                            <li><a href="">Thiết bị Game</a></li>
+                                                                            <li><a href="">Kính thực tế ảo</a></li>
+                                                                            <li><a href="">PlayStation 4</a></li>
+                                                                        </ul>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <h3 class="header__bottom__megaDropdown__conten_hover_submenu__title"><a href="">Điện tử cho văn phòng</a></h3>
+                                                                        <ul class="uk-nav">
+                                                                            <li><a href="">Máy in</a></li>
+                                                                            <li><a href="">Máy chiếu</a></li>
+                                                                            <li><a href="">Máy hủy tài liệu</a></li>
+                                                                            <li><a href="">Máy chấm công</a></li>
+                                                                            <li><a href="">Phụ kiện máy in</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h3 class="header__bottom__megaDropdown__conten_hover_submenu__title"><a href="">Tai nghe</a></h3>
+                                                                        <ul class="uk-nav">
+                                                                            <li><a href="">Tai nghe chụp tai (Over-Ear)</a></li>
+                                                                            <li><a href="">Tai nghe nhét tai (In-Ear và Earbud)</a></li>
+                                                                            <li><a href="">Tai nghe Game</a></li>
+                                                                            <li><a href="">Tai nghe thể thao</a></li>
+                                                                            <li><a href="">Phụ kiện cho tai nghe</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h3 class="header__bottom__megaDropdown__conten_hover_submenu__title"><a href="">Điện tử gia đình</a></h3>
+                                                                        <ul class="uk-nav">
+                                                                            <li><a href="">Tivi</a></li>
+                                                                            <li><a href="">Âm thanh giải trí tại gia</a></li>
+                                                                            <li><a href="">Nhà bếp hiện đại</a></li>
+                                                                            <li><a href="">Hệ thống chiếu sáng thông minh</a></li>
+                                                                            <li><a href="">Thiết bị chống trộm</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h3 class="header__bottom__megaDropdown__conten_hover_submenu__title"><a href="">GPS & Định vị</a></h3>
+                                                                        <ul class="uk-nav">
+                                                                            <li><a href="">Định vị GPS</a></li>
+                                                                            <li><a href="">Định vị GPS cầm tay</a></li>
+                                                                            <li><a href="">Định vị GPS cho xe</a></li>
+                                                                            <li><a href="">Phụ kiện GPS</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="uk-width-1-4">
+                                                                <img src="https://bizweb.dktcdn.net/100/371/004/themes/742760/assets/mega-1-image.jpg?1629431129709"
+                                                                     alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <?php endif; ?>
+                                                </li>
+                                                <?php endforeach; ?>
                                             </ul>
                                         </div>
                                     </div>
@@ -156,11 +271,19 @@
                             <li><a href="#">HÀNG LIKE NEW</a></li>
                             <li>
                                 <a href="#">TIN TỨC</a>
-                                <div class="uk-navbar-dropdown">
+                                <div class="uk-navbar-dropdown uk-margin-remove uk-padding-remove uk-dropdown uk-dropdown-bottom-left" uk-dropdown="animation: uk-animation-slide-bottom-small; duration: 300">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Active</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li><a href="#">Item</a></li>
+                                        <li>
+                                            <a href="#" aria-expanded="false" class="">Tư vấn chọn mua</a>
+                                            <ul class="uk-nav uk-navbar-dropdown-nav uk-dropdown uk-dropdown-right-top" uk-dropdown="pos: right-top; animation: uk-animation-slide-bottom-small; duration: 300">
+                                                <li><a href="#">Mua hàng từ Amazon</a></li>
+                                                <li><a href="#">Mua hàng từ Ebay</a></li>
+                                                <li><a href="#">Mua hàng từ Walmart</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Tin khuyến mãi</a></li>
+                                        <li><a href="#">Hỏi đáp</a></li>
+                                        <li><a href="#">Mẹo vặt</a></li>
                                     </ul>
                                 </div>
                             </li>

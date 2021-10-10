@@ -271,5 +271,10 @@
 <!--/footer-->
 </div>
 <!--/app-->
+<!--backtop-->
+<a href="#" class="back-to-top" uk-scroll>
+    <img src="images/Uptop.png" alt="">
+</a>
+<!--/backtop-->
 </body>
 </html>

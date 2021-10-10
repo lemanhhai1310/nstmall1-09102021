@@ -138,3 +138,14 @@
     }
   }
 }
+.back-to-top{
+  position: fixed;
+  right: 10px;
+  transition: all .3s;
+  bottom: -34px;
+  opacity: 0;
+  &.display{
+    bottom: 69px;
+    opacity: 1;
+  }
+}
