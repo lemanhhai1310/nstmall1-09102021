@@ -49,8 +49,93 @@
       padding-top: 15px;
     }
     padding-bottom: 15px;
+    &__slidenav{
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      background: #fff;
+      border: none;
+      border-radius: 50%;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 15px 0 rgb(0 0 0 / 15%);
+      >*{
+        width: 10px;
+        color: #ff5b02;
+      }
+      $x:35px;
+      &--right{
+        .mobile &{
+          right: -10px;
+          .home__content__news__card &{
+            right: -24px;
+          }
+        }
+        .pc &{
+          left: calc(100% - #{$x});
+          .home__content__news__card &{
+            left: calc(100% - #{$x} + 15px);
+          }
+        }
+      }
+      &--left{
+        .mobile &{
+          left: -10px;
+          .home__content__news__card &{
+            left: -24px;
+          }
+        }
+        .pc &{
+          right: calc(100% - #{$x});
+          .home__content__news__card &{
+            right: calc(100% - #{$x} + 15px);
+          }
+        }
+      }
+    }
+    &__catalog{
+      &__card{
+        @include media-breakpoint-up('m'){
+          border: solid 1px #ebebeb;
+        }
+      }
+      &__item{
+        border: solid 1px #f5f5f5;
+        display: flex;
+        align-items: center;
+        border-left: none;
+        .uk-grid-margin> &{
+          border-top: none;
+          border-bottom: none;
+        }
+        .uk-first-column> &{
+          border-top: none;
+        }
+        &__img{
+          width: 50px;
+        }
+        &__title{
+          @extend .fz-13;
+          font-family: $font-Roboto-Medium;
+          line-height: (18/13);
+          a{
+            color: #292929;
+            text-decoration: none;
+            &:hover{
+              color: #ff5b02;
+            }
+          }
+        }
+      }
+    }
     &__card{
       &--deal{
+        @include media-breakpoint-down('xs'){
+          margin-left: 10px;
+          margin-right: 10px;
+        }
         .uk-card-header{
           background-image: url(images/sport_title.webp);
           background-repeat: no-repeat;
@@ -336,10 +421,12 @@
           }
         }
       }
-      &:nth-child(n+2){
-        margin-top: 15px;
-        @include media-breakpoint-up('m'){
+      &__margin{
+        &:nth-child(n+2){
           margin-top: 15px;
+          @include media-breakpoint-up('m'){
+            margin-top: 15px;
+          }
         }
       }
       @include media-breakpoint-up('m'){

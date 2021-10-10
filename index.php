@@ -21,7 +21,7 @@
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
 </div>
-<div class="home__catalog uk-section-xsmall">
+<div class="home__catalog uk-section-xsmall" hidden>
     <div class="uk-container uk-padding-remove">
         <div class="uk-child-width-expand@m uk-grid-collapse uk-grid-match uk-flex-nowrap uk-overflow-auto" uk-grid>
             <?php
@@ -149,7 +149,7 @@ $dataProduct = array(
 <div class="uk-section-small home__content">
     <div class="uk-container uk-padding-remove">
         <!--Săn Deal mỗi ngày-->
-        <div class="uk-card home__content__card--deal">
+        <div class="uk-card home__content__card__margin home__content__card--deal">
             <div class="uk-card-header">
                 <a href="" class="uk-link-toggle">Săn Deal mỗi ngày</a>
             </div>
@@ -158,7 +158,7 @@ $dataProduct = array(
 
                     <div class="uk-position-relative">
 
-                        <div class="uk-slider-container uk-light">
+                        <div class="uk-slider-container">
                             <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-5@l uk-grid-collapse uk-grid-match" uk-grid>
                                 <?php foreach ($dataProduct as $k=>$v): ?>
                                     <?php if ($k<=4): ?>
@@ -222,8 +222,120 @@ $dataProduct = array(
         </div>
         <!--/Săn Deal mỗi ngày-->
 
+        <!--Danh muc-->
+        <div class="uk-background-default home__content__card__margin home__content__catalog__card">
+            <div uk-slider="finite: true">
+
+                <div class="uk-position-relative">
+
+                    <div class="uk-slider-container">
+                        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-5@l uk-grid-match uk-grid-collapse" uk-grid>
+                            <?php
+                            $data = array(
+                                array(
+                                    'src' => 'https://file.hstatic.net/200000283825/collection/dientu_529a2b0eab674922bd71ca99d0576272_thumb.jpg',
+                                    'txt' => 'Điện tử',
+                                ),
+                                array(
+                                    'src' => 'https://file.hstatic.net/200000283825/collection/dienlanh_9e9a32ea08ea4cebb444de817499f34d_thumb.jpg',
+                                    'txt' => 'Điện lạnh',
+                                ),
+                                array(
+                                    'src' => 'https://file.hstatic.net/200000283825/collection/router_2180ce98a8ed423c9779b5eb048d927a_thumb.jpg',
+                                    'txt' => 'Thiết bị ngoại vi',
+                                ),
+                                array(
+                                    'src' => 'https://file.hstatic.net/200000283825/collection/pkdienmay_cd0136a7da9e4f4ca11df1c71e56a9f5_thumb.jpg',
+                                    'txt' => 'Phụ kiện điện máy',
+                                ),
+                                array(
+                                    'src' => 'https://file.hstatic.net/200000283825/collection/pkso_9ce19462c6cf401788bfe6bc24d2a828_thumb.jpg',
+                                    'txt' => 'Phụ kiện số',
+                                ),
+                                array(
+                                    'src' => 'https://file.hstatic.net/200000283825/collection/kythuatso_2b804809f83d4dbca6bfa147c39817b9_thumb.jpg',
+                                    'txt' => 'Kĩ thuật số',
+                                ),
+                                array(
+                                    'src' => 'https://file.hstatic.net/200000283825/collection/diong_c65b47c87d1146bdb164fbe1cc7de5eb_thumb.jpg',
+                                    'txt' => 'Điện thoại & Tablet',
+                                ),
+                                array(
+                                    'src' => 'https://file.hstatic.net/200000283825/collection/tinhoc_d52cfa6aaafa4cbab44a4dfb7aeb81ca_thumb.jpg',
+                                    'txt' => 'Thiết bị tin học',
+                                ),
+                                array(
+                                    'src' => 'https://file.hstatic.net/200000283825/collection/amthanh_584000807bc94aa1a15a23dcb719675a_thumb.jpg',
+                                    'txt' => 'Âm thanh',
+                                ),
+                                array(
+                                    'src' => 'https://file.hstatic.net/200000283825/collection/giadung_804108648dcf44baba660bef8a8dedbf_thumb.jpg',
+                                    'txt' => 'Đồ gia dụng',
+                                ),
+                                array(
+                                    'src' => 'https://theme.hstatic.net/200000283825/1000676391/14/logo.png?v=27',
+                                    'txt' => 'Thiết bị nhà bếp',
+                                ),
+                                array(
+                                    'src' => 'https://file.hstatic.net/200000283825/collection/pkkhac_b5a1381e858940d5b58594cae0c3852f_thumb.jpg',
+                                    'txt' => 'Phụ kiện khác',
+                                ),
+                            );
+                            foreach ($data as $k=>$v): ?>
+                                <?php if ($k%2==0): ?>
+                                    <li>
+                                    <div class="uk-grid-collapse uk-grid-match uk-child-width-1-1 uk-flex-column" uk-grid>
+                                    <div class="uk-flex-1">
+                                        <a class="home__content__catalog__item uk-padding-small uk-link-toggle" uk-toggle="cls: uk-box-shadow-hover-small; mode: media; media: @m">
+                                            <div class="uk-flex-middle uk-grid-small" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <div class="home__content__catalog__item__img">
+                                                        <img class="uk-responsive-width" src="<?= $v['src'] ?>" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-expand">
+                                                    <h5 class="uk-h5 home__content__catalog__item__title"><?= $v['txt'] ?></h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                <?php else: ?>
+                                    <div class="uk-flex-1">
+                                        <a class="home__content__catalog__item uk-padding-small uk-link-toggle" uk-toggle="cls: uk-box-shadow-hover-small; mode: media; media: @m">
+                                            <div class="uk-flex-middle uk-grid-small" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <div class="home__content__catalog__item__img">
+                                                        <img class="uk-responsive-width" src="<?= $v['src'] ?>" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-expand">
+                                                    <h5 class="uk-h5 home__content__catalog__item__title"><?= $v['txt'] ?></h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    </div>
+                                    </li>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+                    <div class="uk-hidden@s mobile">
+                        <a class="uk-position-center-left uk-position-small home__content__slidenav home__content__slidenav--left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small home__content__slidenav home__content__slidenav--right" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+
+                    <div class="uk-visible@s pc">
+                        <a class="uk-position-center-left-out uk-position-small uk-hidden-hover home__content__slidenav home__content__slidenav--left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small uk-hidden-hover home__content__slidenav home__content__slidenav--right" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Danh muc-->
+
         <!--Đồng hồ-->
-        <div class="uk-card uk-card-default home__content__card home__content__card--product">
+        <div class="uk-card uk-card-default home__content__card home__content__card__margin home__content__card--product">
             <div class="uk-card-header uk-padding-small">
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-expand">
@@ -314,7 +426,7 @@ $dataProduct = array(
         <!--/Đồng hồ-->
 
         <!--Tìm kiếm phổ biến-->
-        <div class="uk-card uk-card-default home__content__card home__content__card--search">
+        <div class="uk-card uk-card-default home__content__card home__content__card__margin home__content__card--search">
             <div class="uk-card-header uk-padding-small">
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-expand">
@@ -414,7 +526,7 @@ $dataProduct = array(
         <!--Tìm kiếm phổ biến-->
 
         <!--Tư vấn mua sản phẩm-->
-        <div class="uk-card uk-card-default home__content__card home__content__card--news">
+        <div class="uk-card uk-card-default home__content__card home__content__card__margin home__content__card--news">
             <div class="uk-card-header uk-padding-small">
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-expand">
