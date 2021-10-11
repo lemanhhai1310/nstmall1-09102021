@@ -1,0 +1,276 @@
+.chitiet{
+  &__content{
+    background-color: #f3f5f7;
+    padding-bottom: 40px;
+  }
+  &__section1{
+    padding: 8px 0;
+    @include media-breakpoint-up('m'){
+      padding: 10px 0;
+    }
+  }
+  &__breadcrumb{
+    >li{
+      >*{
+
+      }
+      &:first-child{
+        >a{
+          >*{
+            position: relative;
+            top: -2px;
+          }
+        }
+      }
+      &:nth-child(n+2){
+        &:before{
+          content: "";
+          $x:10px;
+          margin: 0 #{$x} 0 calc(#{$x} - 4px) !important;
+        }
+      }
+    }
+  }
+  &__margin1{
+    &:nth-child(n+2){
+      margin-top: 20px;
+    }
+  }
+  &__card{
+    box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+    @include media-breakpoint-up('m'){
+      padding: 20px;
+    }
+  }
+  &__product{
+    &__title{
+      color: #222222;
+      @extend .fz-20;
+      font-family: $font-Roboto-Medium;
+      margin-bottom: 5px;
+    }
+    &__boxMasp{
+      padding-bottom: 3px;
+      border-bottom: 1px solid #edeef2;
+      margin-bottom: 7px;
+      &__rate{
+        white-space: nowrap;
+        i.fa{
+          &.fa-star{
+            color: #fea53f;
+          }
+        }
+      }
+      &__txt{
+        color: #222222;
+        @extend .fz-13;
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+    &__listInfo{
+      margin-top: 0;
+      margin-bottom: 0;
+      >li{
+        color: #222222;
+        @extend .fz-14;
+        margin: 0;
+        padding-left: 18px;
+        position: relative;
+        &:before{
+          content: "\f05d";
+          font: normal normal normal 14px/1 FontAwesome;
+          position: absolute;
+          top: 4px;
+          left: -2px;
+          width: 14px;
+          height: 14px;
+          margin: 0;
+          color: #fea53f;
+        }
+        &:nth-child(n+2){
+          margin-top: 5px;
+        }
+        span{
+          color: red;
+          font-weight: bold;
+        }
+      }
+    }
+    &__infoPriceContainer{
+      background: #f1f1f1;
+      margin-bottom: 15px;
+      @include media-breakpoint-up('m'){
+        margin-bottom: 20px;
+      }
+      &__km{
+        color: #0030f2;
+        font-family: $font-Roboto-Medium;
+        @extend .fz-14;
+        a{
+          color: #222222;
+        }
+      }
+      &__priceOld{
+        color: #888888;
+        font-family: $font-Roboto-Medium;
+        @extend .fz-14;
+      }
+      &__priceNew{
+        color: #ce0707;
+        @extend .fz-18;
+        font-family: $font-Roboto-Bold;
+        & ~ *{
+          color: #888888;
+          @extend .fz-12;
+        }
+      }
+      &__label{
+        color: #222222;
+        font-family: $font-Roboto-Medium;
+        @extend .fz-14;
+        @include media-breakpoint-up('m'){
+          min-width: 115px;
+        }
+      }
+    }
+    &__baohanh{
+      color: #222222;
+      @extend .fz-14;
+      font-family: $font-Roboto-Bold;
+      margin-bottom: 15px;
+      @include media-breakpoint-up('m'){
+        margin-bottom: 20px;
+      }
+    }
+    &__option{
+      margin-bottom: 15px;
+      @include media-breakpoint-up('m'){
+        margin-bottom: 20px;
+      }
+      &__label{
+        color: #222222;
+        @extend .fz-14;
+        font-family: $font-Roboto-Bold;
+        margin-bottom: 10px;
+      }
+      &__check{
+        &:checked ~ .chitiet__product__option__item{
+          border-color: #526ae7;
+          background: #f9faff;
+          font-weight: bold;
+        }
+      }
+      &__item{
+        cursor: pointer;
+        border: 1px solid #e1e1e1;
+        border-radius: 4px;
+        padding: 9px 5px;
+        margin: 0;
+        word-break: break-word;
+        height: 100%;
+        box-sizing: border-box;
+        &__txt{
+          @extend .fz-14;
+          color: #222222;
+        }
+        &__price{
+          @extend .fz-15;
+          color: red;
+        }
+      }
+    }
+    &__buyBtn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 55px;
+      text-transform: initial;
+      border-radius: 5px;
+      &:hover{
+        box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 30%);
+      }
+      &--buy{
+        background: #ce0707 !important;
+        border-color: #ce0707 !important;
+        color: #ffffff !important;
+      }
+      &--cart{
+        color: #526ae7 !important;
+        border-color: #526ae7 !important;
+      }
+      &--pay{
+        background: #546ce8 !important;
+        border-color: #546ce8 !important;
+        color: #ffffff !important;
+      }
+      >*{
+        line-height: initial;
+      }
+      &__txt1{
+        @extend .fz-18;
+        font-family: $font-Roboto-Medium;
+      }
+      &__txt2{
+        @extend .fz-12;
+      }
+    }
+  }
+  &__address{
+    &__title{
+      margin: 0;
+      margin-bottom: 5px;
+      color: #222222;
+      @extend .fz-14;
+      font-family: $font-Roboto-Bold;
+    }
+    &__list{
+      margin: 0;
+      color: #546ce8;
+      font-family: $font-Roboto-Medium;
+      @extend .fz-14;
+      >li{
+        margin: 0 !important;
+        padding-left: 15px;
+        @extend .fz-14;
+        &:before{
+          left: -13px;
+          width: 10px;
+        }
+      }
+    }
+  }
+  &__box1{
+    &__title{
+      color: #222222;
+      @extend .fz-20;
+      font-family: $font-Roboto-Bold;
+      padding-bottom: 5px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #edeef2;
+    }
+  }
+  &__supportBuy{
+    &__list{
+      margin: 0;
+      >li{
+        &:nth-child(n+2){
+          margin-top: 5px !important;
+        }
+        padding-left: 23px;
+        background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='%23000' stroke-width='1.1' points='4,10 8,15 17,4'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: top 2px left;
+        >a{
+          color: #222222;
+          @extend .fz-14;
+          text-decoration: none;
+          &:hover{
+            color: #0056b3;
+          }
+        }
+      }
+    }
+  }
+}

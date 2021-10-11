@@ -32,7 +32,7 @@
                                             <i class="fa fa-star-o" aria-hidden="true"></i>
                                             <i class="fa fa-star-o" aria-hidden="true"></i>
                                             <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <div class="uk-position-cover uk-overflow-hidden" style="width: 75%">
+                                            <div class="uk-position-cover uk-overflow-hidden" style="width: 92%">
                                                 <i class="fa fa-star" aria-hidden="true"></i>
                                                 <i class="fa fa-star" aria-hidden="true"></i>
                                                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -158,14 +158,52 @@
                     </div>
                 </div>
                 <div class="uk-width-1-4@m">
-                    <div class="uk-margin">
-                        <h6 class="uk-h6">Hiện đang có tại showroom:</h6>
-                        <ul class="uk-list uk-list-circle">
+                    <div class="uk-margin chitiet__address">
+                        <h6 class="uk-h6 chitiet__address__title">Hiện đang có tại showroom:</h6>
+                        <ul class="uk-list uk-list-circle chitiet__address__list">
                             <li>49 Thái Hà – P. Trung Liệt – Q. Đống Đa – Hà Nội</li>
                             <li>151 Lê Thanh Nghị - Hai Bà Trưng - Hà Nội</li>
                             <li>158-160 Lý Thường Kiệt – P.14 – Q. 10 – TP HCM</li>
                             <li>84T/14 Trần Đình Xu – P. Cô Giang – Q. 1 – TP HCM</li>
                         </ul>
+                    </div>
+                    <div class="uk-margin chitiet__supportBuy">
+                        <h6 class="uk-h6 chitiet__address__title">Trợ giúp</h6>
+                        <ul class="uk-list chitiet__supportBuy__list">
+                            <li><a href="">Hướng dẫn đặt hàng Flash Sale</a></li>
+                            <li><a href="">Hướng dẫn mua hàng</a></li>
+                            <li><a href="">Chính sách bảo hành đổi trả</a></li>
+                            <li><a href="">Chính sách mua trả góp</a></li>
+                            <li><a href="">Chính sách giao hàng</a></li>
+                            <li><a href="">Chính sách bảo hành tận nhà</a></li>
+                            <li><a href="">Hỗ trợ khách hàng dự án, doanh nghiệp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="uk-card chitiet__card uk-card-default uk-padding-small chitiet__margin1">
+            <div class="uk-grid-small uk-grid-20-m" uk-grid>
+                <div class="uk-width-expand">
+                    <h3 class="uk-h3 chitiet__box1__title">MÔ TẢ SẢN PHẨM</h3>
+                </div>
+                <div class="uk-width-1-3@m">
+                    <h3 class="uk-h3 chitiet__box1__title">TIN TỨC LIÊN QUAN</h3>
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-1">
+                            <div class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-3">
+                                    <div class="uk-cover-container">
+                                        <img src="https://anphat.com.vn/media/news/120_7204_top_may_in.jpg" alt="" uk-cover>
+                                        <canvas width="240" height="136"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h5 class="uk-h5"><a href="">Top 5 máy in laser đơn năng giá rẻ có Wi-Fi dành cho gia đình và văn phòng nhỏ tại An Phát</a></h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
