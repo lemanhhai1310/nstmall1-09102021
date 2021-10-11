@@ -1,3 +1,7 @@
 body{
   font-family: $font-Roboto;
 }
+#js-viewmore-summary{
+  @extend .fz-14;
+  color: red;
+}
