@@ -260,6 +260,33 @@
       }
     }
   }
+  &__comment{
+    &__textarea{
+      @extend .fz-14;
+      border-radius: 4px;
+      border-color: #cccccc;
+    }
+    &__input{
+      border-color: #cccccc;
+      @extend .fz-14;
+      height: 32px;
+      border-radius: 4px;
+    }
+    &__label{
+      color: #222222;
+      @extend .fz-14;
+    }
+    &__btnSubmit{
+      line-height: 32px;
+      background-color: #1968b3;
+      border-color: #1968b3;
+      color: #ffffff;
+      @extend .fz-14;
+      font-family: $font-Roboto-Medium;
+      text-transform: initial;
+      border-radius: 4px;
+    }
+  }
   &__supportBuy{
     &__list{
       margin: 0;

@@ -239,20 +239,50 @@
                             </div>
                             <div class="uk-width-expand">
                                 <div class="uk-position-relative">
-                                    <textarea class="uk-textarea" rows="3" placeholder="Nội dung"></textarea>
-                                    <div class="uk-padding-small uk-width-1-1" uk-dropdown="mode: click">
+                                    <textarea class="uk-textarea chitiet__comment__textarea" rows="3" placeholder="Nội dung"></textarea>
+                                    <div id="my-id" class="uk-margin-small">
                                         <form class="uk-form-stacked">
-                                            <label class="uk-form-label" for="form-stacked-text">Đánh giá: </label>
+                                            <div class="uk-grid-5 uk-flex-middle" uk-grid>
+                                                <div>
+                                                    <label class="uk-form-label chitiet__comment__label" for="form-stacked-text">Đánh giá: </label>
+                                                </div>
+                                                <div>
+                                                    <div id="rating">
+                                                        <input type="radio" id="star5" name="rating" value="5" />
+                                                        <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+
+                                                        <input type="radio" id="star4" name="rating" value="4" />
+                                                        <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+
+                                                        <input type="radio" id="star3" name="rating" value="3" />
+                                                        <label class = "full" for="star3" title="Meh - 3 stars"></label>
+
+                                                        <input type="radio" id="star2" name="rating" value="2" />
+                                                        <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+
+                                                        <input type="radio" id="star1" name="rating" value="1" />
+                                                        <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+                                                    </div>
+                                                    <div class="uk-clearfix"></div>
+                                                    <script>
+                                                        function calcRate(r) {
+                                                            const f = ~~r,//Tương tự Math.floor(r)
+                                                                id = 'star' + f + (r % f ? 'half' : '')
+                                                            id && (document.getElementById(id).checked = !0)
+                                                        }
+                                                    </script>
+                                                </div>
+                                            </div>
                                             <div class="uk-form-controls">
                                                 <div class="uk-child-width-1-2@m uk-grid-10" uk-grid>
                                                     <div>
-                                                        <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+                                                        <input class="uk-input chitiet__comment__input" id="form-stacked-text" type="text" placeholder="Họ tên">
                                                     </div>
                                                     <div>
-                                                        <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+                                                        <input class="uk-input chitiet__comment__input" id="form-stacked-text" type="text" placeholder="Email">
                                                     </div>
                                                     <div class="uk-width-1-1">
-                                                        <button type="submit" class="uk-button uk-button-default">Gửi đánh giá của bạn</button>
+                                                        <button type="submit" class="chitiet__comment__btnSubmit uk-button uk-button-default">Gửi đánh giá của bạn</button>
                                                     </div>
                                                 </div>
                                             </div>
