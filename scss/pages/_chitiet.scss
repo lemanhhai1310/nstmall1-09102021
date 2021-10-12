@@ -251,6 +251,15 @@
       border-bottom: 1px solid #edeef2;
     }
   }
+  &__news{
+    &__title{
+      @extend .fz-14;
+      font-family: $font-Roboto-Bold;
+      a{
+        color: #222222;
+      }
+    }
+  }
   &__supportBuy{
     &__list{
       margin: 0;

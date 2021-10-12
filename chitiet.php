@@ -187,6 +187,9 @@
             <div class="uk-grid-small uk-grid-20-m" uk-grid>
                 <div class="uk-width-expand">
                     <h3 class="uk-h3 chitiet__box1__title">MÔ TẢ SẢN PHẨM</h3>
+                    <article class="uk-article">
+                        <p>Noi dung</p>
+                    </article>
                 </div>
                 <div class="uk-width-1-3@m">
                     <h3 class="uk-h3 chitiet__box1__title">TIN TỨC LIÊN QUAN</h3>
@@ -200,10 +203,67 @@
                                     </div>
                                 </div>
                                 <div class="uk-width-expand">
-                                    <h5 class="uk-h5"><a href="">Top 5 máy in laser đơn năng giá rẻ có Wi-Fi dành cho gia đình và văn phòng nhỏ tại An Phát</a></h5>
+                                    <h5 class="uk-h5 chitiet__news__title"><a href="">Top 5 máy in laser đơn năng giá rẻ có Wi-Fi dành cho gia đình và văn phòng nhỏ tại An Phát</a></h5>
                                 </div>
                             </div>
                         </div>
+                        <div class="uk-width-1-1">
+                            <div class="uk-grid-small" uk-grid>
+                                <div class="uk-width-1-3">
+                                    <div class="uk-cover-container">
+                                        <img src="https://anphat.com.vn/media/news/120_7086_mf422dw.jpg" alt="" uk-cover>
+                                        <canvas width="240" height="136"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h5 class="uk-h5 chitiet__news__title"><a href="">Canon MF244dw - máy in laser đa năng đen trắng tốt nhất cho gia đình và văn phòng nhỏ</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chitiet__margin1">
+            <div uk-grid>
+                <div class="uk-width-2-3@m">
+                    <div class="uk-card chitiet__card uk-card-default uk-padding-small chitiet__margin1">
+                        <h3 class="uk-h3 chitiet__box1__title">ĐÁNH GIÁ VÀ NHẬN XÉT</h3>
+                        <div class="uk-grid-10" uk-grid>
+                            <div class="uk-width-auto">
+                                <div class="uk-cover-container">
+                                    <img src="images/noavatar.jpeg" alt="" uk-cover>
+                                    <canvas width="40" height="40"></canvas>
+                                </div>
+                            </div>
+                            <div class="uk-width-expand">
+                                <div class="uk-position-relative">
+                                    <textarea class="uk-textarea" rows="3" placeholder="Nội dung"></textarea>
+                                    <div class="uk-padding-small uk-width-1-1" uk-dropdown="mode: click">
+                                        <form class="uk-form-stacked">
+                                            <label class="uk-form-label" for="form-stacked-text">Đánh giá: </label>
+                                            <div class="uk-form-controls">
+                                                <div class="uk-child-width-1-2@m uk-grid-10" uk-grid>
+                                                    <div>
+                                                        <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+                                                    </div>
+                                                    <div>
+                                                        <input class="uk-input" id="form-stacked-text" type="text" placeholder="Some text...">
+                                                    </div>
+                                                    <div class="uk-width-1-1">
+                                                        <button type="submit" class="uk-button uk-button-default">Gửi đánh giá của bạn</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-card chitiet__card uk-card-default uk-padding-small chitiet__margin1">
+                        <h3 class="uk-h3 chitiet__box1__title">HỎI ĐÁP</h3>
                     </div>
                 </div>
             </div>
