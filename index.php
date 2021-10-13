@@ -383,7 +383,7 @@ $dataProduct = array(
                         </div>
                     </div>
                     <?php foreach ($dataProduct as $k=>$v): ?>
-                        <div>
+                        <div class="<?= ($k==0)?'uk-first-column':'' ?>">
                             <div class="home__content__card--product__item">
                                 <a href="" class="home__content__card--product__item__thumbnail"><img class="uk-responsive-width" src="<?= $v['src'] ?>" alt=""></a>
                                 <h5 class="uk-h5 home__content__card--product__item__name"><a href="" class="uk-link-toggle"><?= $v['title'] ?></a></h5>

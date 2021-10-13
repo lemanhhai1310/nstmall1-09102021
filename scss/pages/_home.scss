@@ -201,8 +201,15 @@
           background-color: #fff;
           border: 1px solid #eaedf1;
           border-top: none;
-          border-right: none;
+          //border-right: none;
+          border-left: none;
           position: relative;
+          .uk-first-column &{
+            border-left: none;
+          }
+          .uk-grid-margin &{
+
+          }
           &:hover{
             @include media-breakpoint-up('m'){
               z-index: 9;
