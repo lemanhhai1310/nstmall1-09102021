@@ -14,7 +14,21 @@
         <div class="uk-card chitiet__card uk-card-default uk-padding-small chitiet__margin1">
             <div class="uk-grid-small uk-grid-20-m" uk-grid>
                 <div class="uk-width-1-3@m">
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
+                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-1@s uk-child-width-1-1@m">
+                            <li>
+                                <img src="https://anphat.com.vn/media/product/3977_may_in_canon_2900.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="https://anphat.com.vn/media/product/3977_canon_2900.jpg" alt="">
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+                    </div>
                 </div>
                 <div class="uk-width-expand">
                     <h1 class="uk-h1 chitiet__product__title">Máy in Laser Canon LBP 2900</h1>
@@ -296,7 +310,94 @@
                         <!--/form comment-->
 
                         <!--list comment-->
+                        <div>
+                            <div class="chitiet__comment__item">
+                                <div class="uk-grid-10" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <div class="uk-cover-container">
+                                            <img src="images/noavatar.jpeg" alt="" uk-cover>
+                                            <canvas width="40" height="40"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="uk-grid-5" uk-grid>
+                                            <div>
+                                                <span class="chitiet__comment__item__title">Khách</span>
+                                            </div>
+                                            <div>
+                                                <div class="chitiet__product__boxMasp__rate uk-position-relative">
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                    <div class="uk-position-cover uk-overflow-hidden" style="width: 100%">
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="chitiet__comment__item__desc">Vô địch trong tầm giá, best pp luôn về độ bền, chất lượng và chi phí. Tôi mua con này từ năm 2017 đến giờ không gặp bất kỳ lỗi gì.</p>
+                                        <div class="uk-child-width-auto uk-flex-between uk-flex-middle" uk-grid>
+                                            <div>
+                                                <span class="chitiet__comment__item__date">(04-02-2021, 9:19 am)</span>
+                                            </div>
+                                            <div>
+                                                <a href="" class="chitiet__comment__item__reply">Trả lời</a>
+                                            </div>
+                                        </div>
+                                        <div class="chitiet__comment__item__boxLeft">
+                                            <div class="chitiet__comment__item__boxLeft__item">
+                                                <div class="uk-grid-10" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-cover-container">
+                                                            <img src="images/noavatar.jpeg" alt="" uk-cover>
+                                                            <canvas width="40" height="40"></canvas>
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="uk-grid-5" uk-grid>
+                                                            <div>
+                                                                <span class="chitiet__comment__item__title">Khách</span>
+                                                            </div>
+                                                            <div>
+                                                                <div class="chitiet__product__boxMasp__rate uk-position-relative">
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                                                                    <div class="uk-position-cover uk-overflow-hidden" style="width: 100%">
+                                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="chitiet__comment__item__desc">Vô địch trong tầm giá, best pp luôn về độ bền, chất lượng và chi phí. Tôi mua con này từ năm 2017 đến giờ không gặp bất kỳ lỗi gì.</p>
+                                                        <div class="uk-child-width-auto uk-flex-between uk-flex-middle" uk-grid>
+                                                            <div>
+                                                                <span class="chitiet__comment__item__date">(04-02-2021, 9:19 am)</span>
+                                                            </div>
+                                                            <div>
 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <!--/list comment-->
                     </div>
                     <div class="uk-card chitiet__card uk-card-default uk-padding-small chitiet__margin1">
