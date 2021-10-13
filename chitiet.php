@@ -230,6 +230,8 @@
                 <div class="uk-width-2-3@m">
                     <div class="uk-card chitiet__card uk-card-default uk-padding-small chitiet__margin1">
                         <h3 class="uk-h3 chitiet__box1__title">ĐÁNH GIÁ VÀ NHẬN XÉT</h3>
+
+                        <!--form comment-->
                         <div class="uk-grid-10" uk-grid>
                             <div class="uk-width-auto">
                                 <div class="uk-cover-container">
@@ -291,6 +293,11 @@
                                 </div>
                             </div>
                         </div>
+                        <!--/form comment-->
+
+                        <!--list comment-->
+
+                        <!--/list comment-->
                     </div>
                     <div class="uk-card chitiet__card uk-card-default uk-padding-small chitiet__margin1">
                         <h3 class="uk-h3 chitiet__box1__title">HỎI ĐÁP</h3>
